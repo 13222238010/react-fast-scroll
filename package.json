@@ -33,7 +33,9 @@
     "build": "react-app-rewired build",
     "test": "jest",
     "eject": "react-scripts eject",
-    "release": "NODE_ENV=production babel src/components --copy-files --extensions .js,.jsx,.ts,.tsx --out-dir lib"
+    "release": "NODE_ENV=production babel src/components --copy-files --extensions .js,.jsx,.ts,.tsx --out-dir lib",
+    "doc:dev": "vuepress dev doc",
+    "doc:build": "vuepress build doc"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -88,7 +90,8 @@
     "react-scripts": "3.4.1",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.5",
+    "vuepress": "^1.5.2"
   },
   "license": "MIT"
 }
